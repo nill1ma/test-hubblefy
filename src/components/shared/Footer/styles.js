@@ -23,10 +23,7 @@ export const FooterMenuItem = styled.li`
     list-style:none;
     cursor: pointer;
     &:hover{
-        font-weight:bold;
         color:#000000;
         font-weight:bold;
-        padding:4px 0;
-        border-bottom:1px solid rgba(255,255,255,0.5);
     }
 `
