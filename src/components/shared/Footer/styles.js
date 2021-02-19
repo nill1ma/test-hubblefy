@@ -7,7 +7,7 @@ export const FooterContainer = styled.div`
     height: 80px;
     padding:10px;
     background:rgba(0,0,0,0.3);
-    position:absolute;
+    margin-top:10px;
     bottom:0;
 `
 export const FooterMenu = styled.ul`
