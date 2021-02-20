@@ -16,7 +16,7 @@ export const FeatureContentItem = styled.div`
     justify-content:center;
     width:380px;
     height:180px;
-    border:1px solid red;
+    border:1px solid rgba(0,0,0,0.1);
 `
 export const FeatureContentImg = styled.img`
     width:380px;

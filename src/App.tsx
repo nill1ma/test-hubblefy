@@ -3,6 +3,7 @@ import { Provider } from "react-redux";
 import './App.css';
 import FeatureContent from './components/FeatureContent';
 import PageTitle from './components/PageTitle';
+import RequestForm from './components/RequestForm';
 import Footer from './components/shared/Footer';
 import Header from './components/shared/Header';
 import SlideBanner from './components/SlideBanner';
@@ -18,6 +19,7 @@ function App() {
         <PageTitle />
         <SlideBanner />
         <FeatureContent />
+        <RequestForm />
         <Footer />
       </Provider>
 
