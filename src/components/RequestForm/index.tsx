@@ -11,7 +11,7 @@ export default function RequestForm() {
         nome: '',
         email: '',
         quantidade: 0,
-        cores: Cores.Laranja,
+        cores: Cores.AZUL,
         pedido: ''
     })
 

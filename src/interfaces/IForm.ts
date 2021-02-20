@@ -9,5 +9,5 @@ export interface IData {
 
 
 export enum Cores {
-    'Azul', 'Rosa', 'Laranja'
+    AZUL = 'Azul', ROSA = 'Rosa', LARANJA = 'Laranja'
 }

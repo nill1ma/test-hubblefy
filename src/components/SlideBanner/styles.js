@@ -9,5 +9,5 @@ export const SlideBannerContainer = styled.div`
 `
 export const SlideBAnnerImages = styled.img`
 `
-export const SlideBAnnerDescription = styled.p`
+export const SlideBAnnerDescription = styled.span`
 `
