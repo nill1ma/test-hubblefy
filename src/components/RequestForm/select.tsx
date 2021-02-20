@@ -7,7 +7,7 @@ export default function Select(props: any) {
     return (
         <RequestFormGroup>
             <RequestFormLabel>{props.label}</RequestFormLabel>
-            <RequestFormSelectBox onChange={(e: any) => props.handleForm('cores', e.target.value)}>
+            <RequestFormSelectBox data-testid='cores' onChange={(e: any) => props.handleForm('cores', e.target.value)}>
                 {Object.keys(Cores).map(cor => {
                     return (
                         isNaN(Number(cor)) ?

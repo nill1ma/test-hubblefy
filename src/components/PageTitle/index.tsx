@@ -8,7 +8,7 @@ export default function PageTitle() {
     
     return (
         <PageTitleContainer>
-            <PageTitleContent>
+            <PageTitleContent data-testid='page-title'>
                 Hubblefy {page.title}
             </PageTitleContent>
         </PageTitleContainer>

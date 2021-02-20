@@ -3,6 +3,7 @@ export interface DataMenu{
 }
 export interface IMenu {
     id: number
+    testId:string
     title: string
     active: boolean
 }

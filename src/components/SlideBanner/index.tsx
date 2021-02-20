@@ -10,7 +10,7 @@ export default function SlideBanner() {
         <SlideBannerContainer>
             <Carousel showThumbs={false} autoPlay infiniteLoop>
                 {slideItems.map(i =>  (
-                        <div>
+                        <div key={Math.random()}>
                             <SlideBAnnerImages src={i.img} />
                             <SlideBAnnerDescription className="legend">{i.description}</SlideBAnnerDescription>
                         </div>

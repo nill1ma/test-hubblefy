@@ -6,16 +6,16 @@ import Logo from '../Logo';
 import { FooterContainer, FooterMenu, FooterMenuItem } from './styles';
 
 export default function Footer() {
-    
+
     const dispatch = useDispatch()
 
     const dimension: IDimensions = { height: '25px', width: '100px' }
 
     const [menu, setMenu] = useState<IMenu[][]>([
-        [{ id: 0, title: 'Como funciona', active: false },
-        { id: 1, title: 'Termos de uso', active: false }],
-        [{ id: 2, title: 'Nossos valores', active: false },
-        { id: 3, title: 'Contatos', active: false }]
+        [{ id: 0,testId:'como-funciona', title: 'Como funciona', active: false },
+        { id: 1, testId:'termos-de-uso',title: 'Termos de uso', active: false }],
+        [{ id: 2,testId:'nossos-valores', title: 'Nossos valores', active: false },
+        { id: 3, testId:'contatos',title: 'Contatos', active: false }]
     ])
 
     const handlePage = (page: IMenu) => {

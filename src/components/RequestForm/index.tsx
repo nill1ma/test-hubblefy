@@ -56,11 +56,11 @@ export default function RequestForm() {
     }
 
     const form = [
-        { label: 'Nome:', type: <RequestFormInput onChange={(e: any) => handleForm('nome', e.target.value)} placeholder="Digite seu nome" /> },
-        { label: 'Email:', type: <RequestFormInput onChange={(e: any) => handleForm('email', e.target.value)} placeholder="Digite seu email" /> },
-        { label: 'Quantidade:', type: <RequestFormInput onChange={(e: any) => handleForm('quantidade', e.target.value)} /> },
+        { label: 'Nome:', type: <RequestFormInput data-testid='nome' defaultValue={data.nome} onChange={(e: any) => handleForm('nome', e.target.value)} placeholder="Digite seu nome" /> },
+        { label: 'Email:', type: <RequestFormInput data-testid='email' defaultValue={data.email} onChange={(e: any) => handleForm('email', e.target.value)} placeholder="Digite seu email" /> },
+        { label: 'Quantidade:', type: <RequestFormInput data-testid='quantidade' defaultValue={data.quantidade} onChange={(e: any) => handleForm('quantidade', e.target.value)} /> },
         { label: 'Cores:', type: <Select handleForm={handleForm} /> },
-        { label: 'Pedido:', type: <RequestFormTextArea value={data.pedido} placeholder="Descrição do pedido" /> },
+        { label: 'Pedido:', type: <RequestFormTextArea data-testid='pedido' defaultValue ={data.pedido} placeholder="Descrição do pedido" /> },
     ]
 
     const checkField = (field: string, value?: any) => {
@@ -86,12 +86,12 @@ export default function RequestForm() {
         <RequestFormContainer>
             {form.map(f => {
                 return (
-                    <>
+                    
                         <RequestFormGroup isButton={false} key={Math.random()}>
                             <RequestFormLabel>{f.label}</RequestFormLabel>
                             {f.type}
                         </RequestFormGroup>
-                    </>
+                    
                 )
             })}
             <RequestFormGroup isButton={true}>

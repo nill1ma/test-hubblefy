@@ -1,15 +1,16 @@
 import React, { useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { IDimensions } from '../../../interfaces/IDimensions'
 import { IMenu } from '../../../interfaces/IMenu'
 import Logo from '../Logo'
 import { HeaderContainer, HeaderMenu, HeaderMenuItem } from './styles'
+
 export default function Header() {
     const dispatch = useDispatch()
 
-    const [menu, setMenu] = useState<IMenu[]>([
-        { id: 0, title: 'Início', active: false },
-        { id: 1, title: 'Contatos', active: false }
+    const [menu] = useState<IMenu[]>([
+        { id: 0, testId:'inicio',title: 'Início', active: false },
+        { id: 1, testId:'contatos',title: 'Contatos', active: false }
     ])
 
     const dimension: IDimensions = { height: '40px', width: '150px' }
@@ -24,7 +25,7 @@ export default function Header() {
             <HeaderMenu>
                 {menu.map(m => {
                     return (
-                        <HeaderMenuItem key={m.id} onClick={() => handlePage(m)}>
+                        <HeaderMenuItem data-testid={`menu-${m.testId}`} key={m.id} onClick={() => handlePage(m)}>
                             {m.title}
                         </HeaderMenuItem>
                     )

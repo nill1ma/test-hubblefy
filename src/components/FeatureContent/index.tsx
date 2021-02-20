@@ -15,7 +15,7 @@ export default function FeatureContent() {
             <FeatureContentItem>
                 {texts.map((text, index) => {
                     return (
-                        <FeatureContentText weight={index === 0 ? 'bold' : ''}>
+                        <FeatureContentText key={Math.random()} weight={index === 0 ? 'bold' : ''}>
                             {text}
                         </FeatureContentText>
                     )
